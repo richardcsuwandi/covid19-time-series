@@ -2,6 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import time
 
 def main():
     st.title("COVID-19 Time Series Analysis 🦠")
@@ -65,6 +66,7 @@ def main():
             plt.ylabel(f"Number of {choice}")
             plt.title(f"Number of {choice} by Date")
             plt.legend()
+            time.sleep(0.2)
             st.pyplot()
 
             for country in countries:
