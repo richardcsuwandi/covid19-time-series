@@ -57,11 +57,16 @@ def main():
         "June": (131, 153)
     }
 
+    # Log scaling on y-axis
+    use_log = False
+    if st.sidebar.checkbox("Use log scaling on y-axis", False):
+        use_log = True
+
     if month == "All Months":
         days = st.sidebar.slider('How many days do you want to plot?', 5, len(covid_data.columns))
         if len(countries) > 0:
             for country in countries:
-                covid_data.loc[country][:days].plot(label=country)
+                covid_data.loc[country][:days].plot(label=country, logy=use_log)
             plt.xlabel("Date")
             plt.ylabel(f"Number of {choice}")
             plt.title(f"Number of {choice} by Date")
@@ -75,17 +80,19 @@ def main():
             plt.ylabel(covid_data_dict[choice][1])
             plt.title(f"{covid_data_dict[choice][1]} by Date")
             plt.legend()
+            time.sleep(0.2)
             st.pyplot()
 
     else:
         if len(countries) > 0:
             for country in countries:
                 start, end = months_dict[month]
-                covid_data.loc[country][start:end].plot(label=country)
+                covid_data.loc[country][start:end].plot(label=country, logy=use_log)
             plt.xlabel("Date")
             plt.ylabel(f"Number of {choice}")
             plt.title(f"Number of {choice} in {month}")
             plt.legend()
+            time.sleep(0.2)
             st.pyplot()
 
             for country in countries:
@@ -95,6 +102,7 @@ def main():
             plt.ylabel(covid_data_dict[choice][1])
             plt.title(f"{covid_data_dict[choice][1]} in {month}")
             plt.legend()
+            time.sleep(0.2)
             st.pyplot()
 
     # Show raw data
