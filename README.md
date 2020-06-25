@@ -1,7 +1,7 @@
 # COVID-19 Time Series Analysis
 This project is one of my machine learning and data-driven web apps made using Python and Streamlit. The goal of this project is to visualize the number of confirmed cases, deaths, and recoveries from COVID-19.
 
-# About the Dataset
+## About the Dataset
 The COVID-19 dataset was published by [John Hopkins University](https://github.com/CSSEGISandData/COVID-19)
 , which consist of daily level information on the number of affected cases,
 deaths and recovery. Please note that this is a time series data and \so the number of cases on any given day is the cumulative number.
