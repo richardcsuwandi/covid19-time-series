@@ -13,7 +13,7 @@ def main():
     st.markdown(
         "Time series visualizations on the number of confirmed cases,\
         deaths, and recoveries from COVID-19. \
-        Note: The data is available from 22 January 2020 to 22 June 2020."
+        between 22 January 2020 to 22 June 2020."
         )
 
     @st.cache(persist=True)
