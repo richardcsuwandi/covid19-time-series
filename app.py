@@ -2,8 +2,6 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import plotly.express as px
-import seaborn as sns
 
 def main():
     st.title("COVID-19 Time Series Analysis 🦠")
@@ -12,7 +10,7 @@ def main():
     st.sidebar.markdown("By Richard Cornelius Suwandi")
     st.markdown(
         "Time series visualizations on the number of confirmed cases, \
-        deaths, and recoveries from COVID-19. \
+        deaths, and recoveries from COVID-19 \
         between 22 January 2020 to 22 June 2020."
         )
 
