@@ -6,8 +6,8 @@ import plotly.express as px
 import seaborn as sns
 
 def main():
-    st.title("COVID-19 Data Analysis 🦠")
-    st.sidebar.title("COVID-19 Data Analysis 🦠")
+    st.title("COVID-19 Time Series Analysis 🦠")
+    st.sidebar.title("COVID-19 Time Series Analysis 🦠")
     st.subheader("By Richard Cornelius Suwandi")
     st.sidebar.markdown("By Richard Cornelius Suwandi")
     st.markdown(
