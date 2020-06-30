@@ -7,8 +7,8 @@ import time
 def main():
     st.title("COVID-19 Time Series Analysis 🦠")
     st.sidebar.title("COVID-19 Time Series Analysis 🦠")
-    st.subheader("By Richard Cornelius Suwandi")
-    st.sidebar.markdown("By Richard Cornelius Suwandi")
+    st.markdown("### By [Richard Cornelius Suwandi](https://github.com/richardcsuwandi)")
+    st.sidebar.markdown("By [Richard Cornelius Suwandi](https://github.com/richardcsuwandi)")
     st.markdown(
         "Time series visualizations on the number of confirmed cases, \
         deaths, and recoveries from COVID-19 \
