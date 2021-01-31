@@ -1,5 +1,9 @@
 # COVID-19 Time Series Analysis
-This project is one of my machine learning and data-driven web apps made using Streamlit. The goal of this project is to visualize the number of confirmed cases, deaths, and recoveries from COVID-19. View this app in action [here](https://covid19-time-series.herokuapp.com)
+This project is one of my machine learning and data-driven web apps made using Streamlit. The goal of this project is to visualize the number of confirmed cases, deaths, and recoveries from COVID-19. 
+
+View this app in action here:
+
+[![Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://covid19-time-series.herokuapp.com)
 
 ## Demo
 Here's a quick demo on how to use the app,
